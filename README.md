@@ -1,7 +1,6 @@
 == README
 
-Sample application (chapter 3) from rails tutorial
-	-- static pages
+Talk Vite application
 
 Things you may want to cover:
 

@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     if @user.save
 			# sign_in defined in sessions_helpers.rb
 			sign_in @user
-			flash[:success] = "Welcome to the Sample App!"
+			flash[:success] = "Welcome to Talk Vite!"
 			redirect_to @user
     else
       render 'new'
