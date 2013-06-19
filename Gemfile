@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# switch to more tolerant versioning as we can
+# what is 'rc1'?
 gem 'rails', '4.0.0.rc1'
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
@@ -13,16 +14,21 @@ gem 'bootstrap-will_paginate', '0.0.9'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3', '1.3.7'
+  gem 'sqlite3'
+	# gem 'sqlite3', '1.3.7'
 	gem 'rspec-rails', '2.13.1'
 	gem 'guard-rspec', '2.5.0'
+  # spork-rails, guard-spork, childprocess wired in a bit too aggressively, see spec_helper.rb & other code
 	gem 'spork-rails', github: 'railstutorial/spork-rails'
 	gem 'guard-spork', '1.5.0'
 	gem 'childprocess', '0.3.6'
 end
 
+# move from sqlite to pg at some point
 group :production do
-	gem 'pg', '0.15.1'
+  gem 'pg'
+	# gem 'pg', '0.15.1'
+  # gem 'postgres-pr'
 end
 
 # capybara lets us model the user interaction in English
