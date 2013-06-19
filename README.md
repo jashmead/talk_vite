@@ -1,6 +1,6 @@
 == README
 
-Talk Vite application
+Talk Vite application -- Nth iteration of this nonsense!
 
 Things you may want to cover:
 
