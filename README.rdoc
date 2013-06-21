@@ -51,7 +51,7 @@ Prelude to more general postings to social media
 
 Be mindful of need to refactor as we go.
 
-=== Docs -- done!
+=== Docs 
 Include docs (i.e. rdoc) as part of the project
 * Get README to compile automatically -- done
 * Get at the Model definitions from rdoc's index.html -- done
@@ -64,7 +64,11 @@ Keep up with the rest
 
 Use the Red/Green/Refactor approach, when not silly
 
-== Phase II
+=== Deployment
+* Figure out what git/heroku mean by "upstream"
+* Capture the talkvite.com site
+
+== Phase I
 === Models
 * Venues
 * Messages
@@ -82,7 +86,7 @@ Make spork & guard work or kill
 
 Get ruby to work on taqm side
 
-== Phase III
+== Phase II
 
 === Models
 Relationships? --  user to user
@@ -93,7 +97,7 @@ Ultimate customization
 === Maps
 Fantasy & other collective maps
 
-== Phase IV
+== Phase III
 
 === Stylesheets
 Evolving
