@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>README - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Micropost.html">Micropost</a>
+  
+    <li><a href="./MicropostsController.html">MicropostsController</a>
+  
+    <li><a href="./Relationship.html">Relationship</a>
+  
+    <li><a href="./RelationshipsController.html">RelationshipsController</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./StaticPagesController.html">StaticPagesController</a>
+  
+    <li><a href="./StaticPagesHelper.html">StaticPagesHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-Talk+Vite+Splendiferous+plan">Talk Vite Splendiferous plan</h1>
+
+<h2 id="label-Phase+Zero+%28MVP%29">Phase Zero (MVP)</h2>
+
+<h3 id="label-Models">Models</h3>
+<ul><li>
+<p>Users</p>
+</li></ul>
+
+<p>admin flags &amp; priviledges &amp; screens use ruby on rails 4 examples</p>
+<ul><li>
+<p>Talks</p>
+</li></ul>
+
+<p>modeled on microposts, to get started</p>
+<ul><li>
+<p>Posts</p>
+</li></ul>
+
+<p>users to talks include join, leave, comment, broadcast</p>
+<ul><li>
+<p>Maps</p>
+</li></ul>
+
+<p>with controls ** From Leaflet ** Zoom in &amp; out ** Pan left, right, up,
+and down ** Change the items shown:  venues, users ** Change symbols (see
+stylesheets)</p>
+<ul><li>
+<p>Tweets</p>
+</li></ul>
+
+<p>prep for more general announcements</p>
+
+<h3 id="label-Database">Database</h3>
+<ul><li>
+<p>shift over to postresql on the development &amp; test sides</p>
+</li><li>
+<p>add in foreign keys</p>
+</li></ul>
+
+<h3 id="label-Views">Views</h3>
+<ul><li>
+<p>Accounts</p>
+</li><li>
+<p>Talks</p>
+</li><li>
+<p>Maps</p>
+</li></ul>
+
+<p>(for talks)</p>
+<ul><li>
+<p>Posts</p>
+</li><li>
+<p>Tweets</p>
+</li></ul>
+
+<h3 id="label-Tests">Tests</h3>
+
+<p>modeled on existing kept up</p>
+
+<h3 id="label-Docs">Docs</h3>
+<ul><li>
+<p>Integrate rdoc as part of the project</p>
+</li></ul>
+
+<p>** Get <a href="README_rdoc.html">README</a> to compile automatically **
+Get at the Model definitions from rdoc&#39;s index.html</p>
+
+<h2 id="label-Phase+II">Phase II</h2>
+
+<h3 id="label-Models">Models</h3>
+<ul><li>
+<p>Venues</p>
+</li><li>
+<p>Messages</p>
+</li></ul>
+
+<p>user to user</p>
+<ul><li>
+<p>Groups</p>
+</li><li>
+<p>Memberships</p>
+</li></ul>
+
+<p>in groups</p>
+
+<h3 id="label-Database">Database</h3>
+
+<p>admin stuff</p>
+
+<h3 id="label-Views">Views</h3>
+
+<p>generalized maps</p>
+
+<h3 id="label-Internal">Internal</h3>
+
+<p>make spork &amp; guard work or kill get ruby to work on taqm side</p>
+
+<h2 id="label-Phase+III">Phase III</h2>
+
+<h3 id="label-Models">Models</h3>
+
+<p>relationships? –  user to user</p>
+
+<h3 id="label-Stylesheets">Stylesheets</h3>
+
+<p>ultimate customization</p>
+
+<h3 id="label-Maps">Maps</h3>
+
+<p>fantasy &amp; other collective maps</p>
+
+<h2 id="label-Phase+IV">Phase IV</h2>
+
+<h3 id="label-Stylesheets">Stylesheets</h3>
+
+<p>evolving</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

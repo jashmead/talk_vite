@@ -1,22 +1,10 @@
 =begin
-  user model
+User will include admins
+* may want admin/non-admin scopes
+* see Rails 4 in Action (eBook) for details
+* see ABAI for example at work
 
-  MVP
-
-    will be adding an admin flag
-      -- see ruby on rails 4 for details on this
-    
-    will be adding talks, 
-      talks will belong to users,
-      users will has_many talks
-
-  MVP2  -- if that is meaningful? :)
-
-    users & groups thereof
-      -- or else model as relationships
-
-    user to user messaging
-
+Originally taken from Michael Hardt's tutorial
 =end
 class User < ActiveRecord::Base
 

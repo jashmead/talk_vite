@@ -1,6 +1,5 @@
 =begin
   relationships will serve as model (with microposts) for posts
-
 =end
 
 class Relationship < ActiveRecord::Base

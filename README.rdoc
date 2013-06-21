@@ -1,28 +1,77 @@
-== README
+= Talk Vite Splendiferous plan
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+== Phase Zero (MVP)
 
-Things you may want to cover:
+=== Models
+* Users
+admin flags & priviledges & screens
+use ruby on rails 4 examples
+* Talks
+modeled on microposts, to get started
+* Posts
+users to talks
+include join, leave, comment, broadcast
+* Maps
+with controls
+** From Leaflet
+** Zoom in & out
+** Pan left, right, up, and down
+** Change the items shown:  venues, users
+** Change symbols (see stylesheets)
+* Tweets
+prep for more general announcements
 
-* Ruby version
+=== Database
+* shift over to postresql on the development & test sides
+* add in foreign keys
 
-* System dependencies
+=== Views
+* Accounts
+* Talks
+* Maps 
+(for talks)
+* Posts
+* Tweets
+=== Tests
+modeled on existing
+kept up
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+=== Docs
+* Integrate rdoc as part of the project
+** Get README to compile automatically
+** Get at the Model definitions from rdoc's index.html
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Phase II
+=== Models
+* Venues
+* Messages
+user to user
+* Groups
+* Memberships
+in groups
+=== Database
+admin stuff
+
+=== Views
+generalized maps
+
+=== Internal
+make spork & guard work or kill
+get ruby to work on taqm side
+
+== Phase III
+
+=== Models
+relationships? --  user to user
+
+=== Stylesheets
+ultimate customization
+
+=== Maps
+fantasy & other collective maps
+
+== Phase IV
+
+=== Stylesheets
+evolving
