@@ -136,11 +136,16 @@
 
   <div id="description" class="description">
     
-<p>user model</p>
+<p><a href="User.html">User</a> will include admins</p>
+<ul><li>
+<p>may want admin/non-admin scopes</p>
+</li><li>
+<p>see Rails 4 in Action (eBook) for details</p>
+</li><li>
+<p>see ABAI for example at work</p>
+</li></ul>
 
-<p>MVP</p>
-
-<pre>will be adding an admin flag</pre>
+<p>Originally taken from Michael Hardt&#39;s tutorial</p>
 
   </div><!-- description -->
 
@@ -191,7 +196,7 @@
 
           
           <div class="method-source-code" id="feed-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 47</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">feed</span>
   <span class="ruby-constant">Micropost</span>.<span class="ruby-identifier">from_users_followed_by</span>(<span class="ruby-keyword">self</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -221,7 +226,7 @@
 
           
           <div class="method-source-code" id="follow-21-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 55</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 43</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">follow!</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">relationships</span>.<span class="ruby-identifier">create!</span>(<span class="ruby-identifier">followed_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">other_user</span>.<span class="ruby-identifier">id</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -251,7 +256,7 @@
 
           
           <div class="method-source-code" id="following-3F-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 51</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 39</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">following?</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">relationships</span>.<span class="ruby-identifier">find_by</span>(<span class="ruby-identifier">followed_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">other_user</span>.<span class="ruby-identifier">id</span>)
 <span class="ruby-keyword">end</span></pre>
@@ -281,7 +286,7 @@
 
           
           <div class="method-source-code" id="unfollow-21-source">
-            <pre><span class="ruby-comment"># File app/models/user.rb, line 59</span>
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 47</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">unfollow!</span>(<span class="ruby-identifier">other_user</span>)
   <span class="ruby-identifier">relationships</span>.<span class="ruby-identifier">find_by</span>(<span class="ruby-identifier">followed_id</span><span class="ruby-operator">:</span> <span class="ruby-identifier">other_user</span>.<span class="ruby-identifier">id</span>).<span class="ruby-identifier">destroy</span>
 <span class="ruby-keyword">end</span></pre>

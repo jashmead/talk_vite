@@ -37,9 +37,10 @@ modeled on existing
 kept up
 
 === Docs -- done!
-* Integrate rdoc as part of the project -- done
-** Get README to compile automatically -- done
-** Get at the Model definitions from rdoc's index.html -- done
+Include docs (i.e. rdoc) as part of the project
+* Get README to compile automatically -- done
+* Get at the Model definitions from rdoc's index.html -- done
+* Have created command 'tvdoc' to automagically recompile & build docs
 
 == Phase II
 === Models
