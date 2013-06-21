@@ -2,6 +2,15 @@
 
 == Phase Zero (MVP)
 
+Summary of MVP
+1. RDoc -- done!
+1. PostgreSQL
+1. Talks
+1. Posts
+1. Maps
+1. Tweets
+1. Admins
+
 === Models
 ==== Users
 Admin flags & privileges & screens
@@ -40,6 +49,8 @@ Prelude to more general postings to social media
 * Posts
 * Tweets
 
+Be mindful of need to refactor as we go.
+
 === Docs -- done!
 Include docs (i.e. rdoc) as part of the project
 * Get README to compile automatically -- done
@@ -50,6 +61,8 @@ Include docs (i.e. rdoc) as part of the project
 Model on existing
 
 Keep up with the rest
+
+Use the Red/Green/Refactor approach, when not silly
 
 == Phase II
 === Models
