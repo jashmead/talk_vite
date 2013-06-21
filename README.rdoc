@@ -1,29 +1,37 @@
-= Talk Vite Splendiferous plan
+= Plan Splendiferous
 
 == Phase Zero (MVP)
 
 === Models
 ==== Users
-admin flags & priviledges & screens
-use ruby on rails 4 examples
+Admin flags & privileges & screens
+
+Use ruby on rails 4 examples
 ==== Talks
-modeled on microposts, to get started
+Modeled on microposts
+
+Next major step
 ==== Posts
-users to talks
-include join, leave, comment, broadcast
+Go from users to talks
+
+Include join, leave, comment, broadcast
 ==== Maps
-with controls
+With controls
 1. From Leaflet
 1. Zoom in & out
 1. Pan left, right, up, and down
 1. Change the items shown:  venues, users
 1. Change symbols (see stylesheets)
 ==== Tweets
-prep for more general announcements
+Major step
+
+Use examples in jquery mobile documentation
+
+Prelude to more general postings to social media
 
 === Database
-* shift over to postresql on the development & test sides
-* add in foreign keys
+* Shift over to postresql on the development & test sides
+* Add in foreign keys
 
 === Views
 * Accounts
@@ -32,15 +40,16 @@ prep for more general announcements
 * Posts
 * Tweets
 
-=== Tests
-modeled on existing
-kept up
-
 === Docs -- done!
 Include docs (i.e. rdoc) as part of the project
 * Get README to compile automatically -- done
 * Get at the Model definitions from rdoc's index.html -- done
 * Have created command 'tvdoc' to automagically recompile & build docs
+
+=== Tests
+Model on existing
+
+Keep up with the rest
 
 == Phase II
 === Models
@@ -53,24 +62,25 @@ user to user
 admin stuff, whatever that may mean
 
 === Views
-generalized maps
+Generalized maps
 
 === Internal
-make spork & guard work or kill
-get ruby to work on taqm side
+Make spork & guard work or kill
+
+Get ruby to work on taqm side
 
 == Phase III
 
 === Models
-relationships? --  user to user
+Relationships? --  user to user
 
 === Stylesheets
-ultimate customization
+Ultimate customization
 
 === Maps
-fantasy & other collective maps
+Fantasy & other collective maps
 
 == Phase IV
 
 === Stylesheets
-evolving
+Evolving
