@@ -3,22 +3,22 @@
 == Phase Zero (MVP)
 
 === Models
-* Users
+==== Users
 admin flags & priviledges & screens
 use ruby on rails 4 examples
-* Talks
+==== Talks
 modeled on microposts, to get started
-* Posts
+==== Posts
 users to talks
 include join, leave, comment, broadcast
-* Maps
+==== Maps
 with controls
-** From Leaflet
-** Zoom in & out
-** Pan left, right, up, and down
-** Change the items shown:  venues, users
-** Change symbols (see stylesheets)
-* Tweets
+1. From Leaflet
+1. Zoom in & out
+1. Pan left, right, up, and down
+1. Change the items shown:  venues, users
+1. Change symbols (see stylesheets)
+==== Tweets
 prep for more general announcements
 
 === Database
@@ -28,19 +28,18 @@ prep for more general announcements
 === Views
 * Accounts
 * Talks
-* Maps 
-(for talks)
+* Maps (for talks)
 * Posts
 * Tweets
+
 === Tests
 modeled on existing
 kept up
 
-=== Docs
-* Integrate rdoc as part of the project
-** Get README to compile automatically
-** Get at the Model definitions from rdoc's index.html
-
+=== Docs -- done!
+* Integrate rdoc as part of the project -- done
+** Get README to compile automatically -- done
+** Get at the Model definitions from rdoc's index.html -- done
 
 == Phase II
 === Models
@@ -48,10 +47,9 @@ kept up
 * Messages
 user to user
 * Groups
-* Memberships
-in groups
+* Memberships (in groups)))
 === Database
-admin stuff
+admin stuff, whatever that may mean
 
 === Views
 generalized maps
