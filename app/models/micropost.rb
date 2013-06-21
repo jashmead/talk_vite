@@ -1,3 +1,11 @@
+=begin
+
+  microposts will serve as model for
+    -- talks, especially talks up to users
+    -- and posts from users to talk
+
+=end
+
 class Micropost < ActiveRecord::Base
 	belongs_to :user
 

@@ -1,4 +1,25 @@
+=begin
+  user model
+
+  MVP
+
+    will be adding an admin flag
+      -- see ruby on rails 4 for details on this
+    
+    will be adding talks, 
+      talks will belong to users,
+      users will has_many talks
+
+  MVP2  -- if that is meaningful? :)
+
+    users & groups thereof
+      -- or else model as relationships
+
+    user to user messaging
+
+=end
 class User < ActiveRecord::Base
+
 	has_many :microposts, dependent: :destroy
 	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
 	# no 'has_many :relationships, foreign_key: "followed_id", dependent: :destroy' ?
@@ -15,7 +36,8 @@ class User < ActiveRecord::Base
 	validates :name, presence: true, length: { maximum: 50 }
 
 	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
-	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, 
+	validates :email, presence: true, 
+    format: { with: VALID_EMAIL_REGEX }, 
 		uniqueness: { case_sensitive: false }
 
 	has_secure_password
