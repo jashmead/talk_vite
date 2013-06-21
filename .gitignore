@@ -14,3 +14,13 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore rdoc timestamp file
+doc/created.rid
+
+# ignore swp & related files
+*~
+*.swp
+*.bak
+*.out
+*.lst
