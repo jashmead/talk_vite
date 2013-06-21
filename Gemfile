@@ -29,11 +29,7 @@ group :development, :test do
 end
 
 # move from sqlite to pg at some point
-group :production do
-  gem 'pg'
-	# gem 'pg', '0.15.1'
-  # gem 'postgres-pr'
-end
+gem 'pg'
 
 # capybara lets us model the user interaction in English
 group :test do
